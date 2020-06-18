@@ -17,7 +17,7 @@ export const loadUser = () => async (dispatch) => {
   }
 
   try {
-    const res = await axios.get('http://localhost:5000/api/v1/auth');
+    const res = await axios.get('http://localhost:5000/api/v1/post/index');
 
     dispatch({
       type: USER_LOADED,
